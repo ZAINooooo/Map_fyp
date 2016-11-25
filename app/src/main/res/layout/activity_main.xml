@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/NextActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="#2E7D32"
+        android:text="Next" />
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:orientation="vertical">-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="@string/enter_city_name_hint"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingTop="24dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="16sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingLeft="16dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingRight="16dp"/>&ndash;&gt;-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select City and Locality"
+            android:paddingTop="24dp"
+            android:textSize="16sp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/PlaceCity" />
+        <!--android:drawableLeft="@mipmap/gps"-->
+        <!---->
+        <!--android:drawablePadding="2dp"-->
+
+        <!--android:drawablePadding="5dp"-->
+        <!--android:singleLine="true"-->
+        <!--android:foregroundGravity="center"-->
+
+
+
+
+        <ImageView
+
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="42dp"
+            android:maxHeight="32dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="-25dp"
+
+            android:src="@mipmap/gpss"/>
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete_text"
+            android:layout_width="match_parent"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:imeOptions="actionSearch" />
+
+
+    <fragment
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#000000"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+</FrameLayout>

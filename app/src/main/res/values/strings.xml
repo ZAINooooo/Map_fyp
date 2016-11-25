@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+
+    <string name="app_name">My Map</string>
+    <string name="enter_city_name_hint">Enter city name:</string>
+    <string name="formatted_place_data">my valuesss</string>
+
+</resources>
